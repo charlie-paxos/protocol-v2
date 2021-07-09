@@ -189,6 +189,7 @@ export interface iAssetBase<T> {
   USDC: T;
   USDT: T;
   SUSD: T;
+  PAX: T;
   AAVE: T;
   BAT: T;
   MKR: T;
@@ -218,6 +219,7 @@ export type iAavePoolAssets<T> = Pick<
   | 'USDC'
   | 'USDT'
   | 'SUSD'
+  | 'PAX'
   | 'AAVE'
   | 'BAT'
   | 'MKR'
@@ -251,6 +253,7 @@ export enum TokenContractId {
   USDC = 'USDC',
   USDT = 'USDT',
   SUSD = 'SUSD',
+  PAX = 'PAX',
   ZRX = 'ZRX',
   MKR = 'MKR',
   WBTC = 'WBTC',
@@ -264,7 +267,7 @@ export enum TokenContractId {
   YFI = 'YFI',
   UNI = 'UNI',
   ENJ = 'ENJ',
-  xSUSHI = 'xSUSHI'
+  xSUSHI = 'xSUSHI',
 }
 
 export interface IReserveParams extends IReserveBorrowParams, IReserveCollateralParams {
